@@ -24,6 +24,10 @@ namespace TestApp
                 temp = temp.Remove(0, index + 1).Trim(' ');
             }
             values.Add(temp);
+            foreach (var value in values)
+            {
+                MessageBox.Show(value);
+            }
         }
     }
 }
