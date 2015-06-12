@@ -34,5 +34,10 @@ namespace TestApp
                 outListBoxText.Items.Add(value);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(var2TextBox.Text);
+        }
     }
 }
