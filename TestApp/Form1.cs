@@ -15,7 +15,12 @@ namespace TestApp
         public Form1()
         {
             InitializeComponent();
-            string temp = "1507-B-A2-2-010 / Standardkurs A2.2 / 13.07.2015 / Mon/Die/Mit/Don/Fre 08:30-12:45";
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string temp = var1TextBox.Text;
             List<string> values = new List<string>();
             for (int i = 0; i < 3; i++)
             {
@@ -26,7 +31,7 @@ namespace TestApp
             values.Add(temp);
             foreach (var value in values)
             {
-                MessageBox.Show(value);
+                outListBoxText.Items.Add(value);
             }
         }
     }

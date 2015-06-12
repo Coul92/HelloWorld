@@ -41,7 +41,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.outListBoxText = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -126,6 +126,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -154,13 +155,13 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // outListBoxText
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(18, 140);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(248, 95);
-            this.listBox1.TabIndex = 4;
+            this.outListBoxText.FormattingEnabled = true;
+            this.outListBoxText.Location = new System.Drawing.Point(18, 140);
+            this.outListBoxText.Name = "outListBoxText";
+            this.outListBoxText.Size = new System.Drawing.Size(248, 95);
+            this.outListBoxText.TabIndex = 4;
             // 
             // label5
             // 
@@ -187,7 +188,7 @@
             this.ClientSize = new System.Drawing.Size(531, 250);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.outListBoxText);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -223,7 +224,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox outListBoxText;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
     }
